@@ -1,108 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Worksheet>
-<Version major="17" minor="0"/>
-<Label-Scheme value="2" prefix=""/>
-<View-Properties presentation="false" autoexpanding_sections="true">
-</View-Properties>
-<MapleNet-Properties elisiondigitsbefore="100" labelling="true" indentamount="4" elisiontermsthreshold="10000" ansi="false" errorbreak="1" useclientjvm="true" echo="1" imaginaryunit="I" labelwidth="20" contextmenusize="automatic" plotdriver="opengl" elisiondigitsafter="100" plotoutput="terminal" helpbrowser="standard" rtablesize="10" elisiontermsbefore="100" elisiondigitsthreshold="10000" typesetting="standard" plotdevice="inline" verboseproc="1" showassumed="1" errorcursor="false" longdelim="true" plotoptions="" quiet="false" elisiontermsafter="100" screenwidth="79" preplot="" prettyprint="3" displayprecision="-1" screenpixelheight="1080" warnlevel="3" screenheight="25" latexwidth="8.0" postplot="" prompt="&gt; " ShowLabels="true"/>
-<Styles>
-<Font name="Ordered List 1" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Ordered List 2" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Ordered List 3" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Ordered List 4" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Ordered List 5" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Author" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Warning" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Caption Reference" background="[255,255,255]" bold="true" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Maple Input Placeholder" background="[255,255,255]" bold="true" executable="true" family="SimSun" foreground="[200,0,200]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="true"/>
-<Font name="Maple Plot" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Code" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[255,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Line Printed Output" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Text Output" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Diagnostic" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[40,120,40]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="2D Inert Output" background="[255,255,255]" bold="false" executable="true" family="SimSun" foreground="[144,144,144]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Normal" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Hyperlink" background="[255,255,255]" bold="false" executable="false" family="Serif" foreground="[0,128,128]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
-<Font name="Maple Output" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Dash Item" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="2D Math" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Maple Input" background="[255,255,255]" bold="true" executable="true" family="SimSun" foreground="[120,0,14]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="2D Output" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="2D Input" background="[255,255,255]" bold="false" executable="true" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="HyperlinkError" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[255,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
-<Font name="Header and Footer" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="10" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Error" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[255,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Title" background="[255,255,255]" bold="true" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Heading 1" background="[255,255,255]" bold="true" executable="false" family="Serif" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Text" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Bullet Item" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Heading 4" background="[255,255,255]" bold="false" executable="false" family="Serif" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Equation Label" background="[255,255,255]" bold="true" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Heading 3" background="[255,255,255]" bold="true" executable="false" family="Serif" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="14" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Heading 2" background="[255,255,255]" bold="true" executable="false" family="Serif" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="16" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="HyperlinkWarning" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
-<Font name="Dictionary Hyperlink" background="[255,255,255]" bold="false" executable="false" family="Serif" foreground="[147,0,15]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
-<Font name="Atomic Variable" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[175,0,175]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="Caption Text" background="[255,255,255]" bold="true" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Font name="List Item" background="[255,255,255]" bold="false" executable="false" family="SimSun" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
-<Layout name="Maple Output" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.3" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Ordered List 1" alignment="left" bullet="numeric" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
-<Layout name="Dash Item" alignment="left" bullet="dash" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Ordered List 2" alignment="left" bullet="alphabetic" firstindent="0" leftmargin="36" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
-<Layout name="Ordered List 3" alignment="left" bullet="roman" firstindent="0" leftmargin="72" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
-<Layout name="Ordered List 4" alignment="left" bullet="ALPHABETIC" firstindent="0" leftmargin="108" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
-<Layout name="Ordered List 5" alignment="left" bullet="ROMAN" firstindent="0" leftmargin="144" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
-<Layout name="Author" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="8" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Warning" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="HyperlinkError" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Maple Plot" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Error" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Title" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="12" spacebelow="12" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Line Printed Output" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="any" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Heading 1" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="4" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Diagnostic" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="any" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Text Output" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="newline" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Bullet Item" alignment="left" bullet="dot" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Heading 4" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Normal" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Heading 3" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="Heading 2" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="2" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="HyperlinkWarning" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Layout name="List Item" alignment="left" bullet="indent" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
-<Pencil-style name="Pencil 5" pen-color="[255,0,0]" pen-height="5.0" pen-width="5.0" pen-opacity="1.0"/>
-<Pencil-style name="Pencil 4" pen-color="[0,0,255]" pen-height="3.0" pen-width="3.0" pen-opacity="1.0"/>
-<Pencil-style name="Pencil 3" pen-color="[0,0,0]" pen-height="3.0" pen-width="3.0" pen-opacity="1.0"/>
-<Pencil-style name="Pencil 2" pen-color="[0,0,255]" pen-height="1.0" pen-width="1.0" pen-opacity="1.0"/>
-<Pencil-style name="Pencil 1" pen-color="[0,0,0]" pen-height="1.0" pen-width="1.0" pen-opacity="1.0"/>
-<Highlighter-style name="Highlighter 2" pen-color="[255,204,0]" pen-height="14.0" pen-width="14.0" pen-opacity="0.8"/>
-<Highlighter-style name="Highlighter 1" pen-color="[255,153,255]" pen-height="12.0" pen-width="8.0" pen-opacity="0.8"/>
-<Highlighter-style name="Highlighter 4" pen-color="[0,255,255]" pen-height="32.0" pen-width="32.0" pen-opacity="0.8"/>
-<Highlighter-style name="Highlighter 3" pen-color="[51,255,0]" pen-height="24.0" pen-width="24.0" pen-opacity="0.8"/>
-<Highlighter-style name="Highlighter 5" pen-color="[255,255,0]" pen-height="48.0" pen-width="48.0" pen-opacity="0.8"/>
-</Styles>
-<Task-table>
-    <Task-category name="&lt;default&gt;"/>
-</Task-table>
-<Task/>
-<Group labelreference="L1" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="StandardForm := proc (P, k) local n, d, s, dd, T; n := nops(P); d[1] := subs(x[1] = r*cos(theta), x[2] = r*sin(theta), cos(theta)*P[1]+sin(theta)*P[2]); d[2] := subs(x[1] = r*cos(theta), x[2] = r*sin(theta), (cos(theta)*P[2]-sin(theta)*P[1])/r); T[1] := series(factor(subs(r = epsilon*R, seq(x[j] = epsilon*X[j], j = 3 .. n), d[1]/d[2])/epsilon), epsilon = 0, k+1); dd[1] := collect(simplify(convert(T[1], polynom), {cos(theta)^2+sin(theta)^2-1}, [sin(theta)]), epsilon); for s from 3 to n do d[s] := subs(x[1] = r*cos(theta), x[2] = r*sin(theta), P[s]); T[s] := series(factor(subs(r = epsilon*R, seq(x[j] = epsilon*X[j], j = 3 .. n), d[s]/d[2])/epsilon), epsilon = 0, k+1); dd[s] := collect(simplify(convert(T[s], polynom), {cos(theta)^2+sin(theta)^2-1}, [sin(theta)]), epsilon) end do; return [dd[1], seq(dd[j], j = 3 .. n)] end proc:" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzZkci1JI21pR0YkNiVRLVN0YW5kYXJkRm9ybUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKiZjb2xvbmVxO0YnL0YzUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGPS8lKXN0cmV0Y2h5R0Y9LyUqc3ltbWV0cmljR0Y9LyUobGFyZ2VvcEdGPS8lLm1vdmFibGVsaW1pdHNHRj0vJSdhY2NlbnRHRj0vJSdsc3BhY2VHUSwwLjI3Nzc3NzhlbUYnLyUncnNwYWNlR0ZMLUY2Ni9RJXByb2NGJy8lJWJvbGRHRjEvRjNRJWJvbGRGJy8lK2ZvbnR3ZWlnaHRHRlVGO0Y+RkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTkZZLUkobWZlbmNlZEdGJDYkLUYjNiYtRiw2JVEiUEYnRi9GMi1GNjYtUSIsRidGOUY7L0Y/RjFGQEZCRkRGRkZIRlgvRk5RLDAuMzMzMzMzM2VtRictRiw2JVEia0YnRi9GMkY5RjktRiw2I1EhRictSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdGWS8lJmRlcHRoR0ZecC8lKmxpbmVicmVha0dRKG5ld2xpbmVGJy1GNjYtUSJ+RidGOUY7Rj5GQEZCRkRGRkZIRlhGWkZmcC1GNjYvUSZsb2NhbEYnRlJGVEZWRjtGPkZARkJGREZGRkhGWEZaRmZwLUYsNiVRIm5GJ0YvRjJGXW8tRiw2JVEiZEYnRi9GMkZdby1GLDYlUSJzRidGL0YyRl1vLUYsNiVRI2RkRidGL0YyRl1vLUYsNiVRIlRGJ0YvRjItRjY2LVEiO0YnRjlGO0Zgb0ZARkJGREZGRkhGWEZNRmlvRmZwRmZwRlxxRjUtRiw2JVElbm9wc0YnRi9GMi1GZm42JC1GIzYkRmpuRjlGOUZbckZmcEZpb0ZmcEZfcS1GZm42Ji1GIzYkLUkjbW5HRiQ2JFEiMUYnRjlGOUY5LyUlb3BlbkdRIltGJy8lJmNsb3NlR1EiXUYnRjUtRiw2JVElc3Vic0YnRi9GMi1GZm42JC1GIzY+LUYsNiVRInhGJ0YvRjJGZXItRjY2LVEiPUYnRjlGO0Y+RkBGQkZERkZGSEZKRk0tRiw2JVEickYnRi9GMi1GNjYtUScmc2RvdDtGJ0Y5RjtGPkZARkJGREZGRkhGWEZaLUY2Ni5RJGNvc0YnLyUnZmFtaWx5R1EwVGltZXN+TmV3flJvbWFuRidGOS9GPFEmdW5zZXRGJy9GP0ZddS9GQUZddS9GQ0ZddS9GRUZddS9GR0ZddS9GSUZddUZYRlotRmZuNiUtRiM2JC1GLDYnUSgmdGhldGE7RidGaXQvRjBGPS8lNnNlbGVjdGlvbi1wbGFjZWhvbGRlckdGMUY5RjlGaXRGOS1GNjYvRl9vRml0Rlx2RjlGO0Zgb0ZARkJGREZGRkhGWEZhby1GLDYnRlx0Rml0Ri9GXHZGMi1GZm42KC1GIzYkLUZqcjYlUSIyRidGaXRGOUY5Rml0Rlx2RjlGXXNGYHMtRjY2LkZfdEZpdEY5RjtGPkZARkJGREZGRkhGSkZNLUYsNiZGYnRGaXRGL0YyLUY2Ni5GZXRGaXRGOUY7Rj5GQEZCRkRGRkZIRlhGWi1GNjYuUSRzaW5GJ0ZpdEY5Rlx1Rl51Rl91RmB1RmF1RmJ1RmN1RlhGWkZkdUZedi1GLDYnRmh0Rml0Rlt2Rlx2RjlGZHVGY3RGam5GZXItRjY2LVEiK0YnRjlGO0Y+RkBGQkZERkZGSC9GS1EsMC4yMjIyMjIyZW1GJy9GTkZod0Zfd0ZkdUZjdEZqbi1GZm42Ji1GIzYkLUZqcjYkRmh2RjlGOUY5Rl1zRmBzRjlGOUZbckZpb0ZmcEZfcUZqd0Y1RmNzLUZmbjYkLUYjNjdGanNGZXJGXXRGYHRGY3RGZnRGZHVGXnZGYHZGYnZGaXZGW3dGXXdGX3dGZHUtRjY2LkZfb0ZpdEY5RjtGYG9GQEZCRkRGRkZIRlhGYW8tSSZtZnJhY0dGJDYoLUZqcjYlRlxzRml0RjktRiM2JEZbd0Y5LyUubGluZXRoaWNrbmVzc0dGXHMvJStkZW5vbWFsaWduR1EnY2VudGVyRicvJSludW1hbGlnbkdGYXkvJSliZXZlbGxlZEdGPUZddy1GZm42JS1GIzYuLUYsNiZGaHRGaXRGW3ZGOUZkdUZjdEZqbkZqdy1GNjYtUSomdW1pbnVzMDtGJ0Y5RjtGPkZARkJGREZGRkhGZ3dGaXdGX3dGZHVGY3RGam5GZXJGOUZpdEY5RmZvRjlGOUZbckZmcEZpb0ZmcEZocUZlckY1LUYsNiVRJ3Nlcmllc0YnRi9GMi1GZm42JC1GIzYtLUYsNiVRJ2ZhY3RvckYnRi9GMi1GZm42JC1GIzYnLUZneDYoRmlyLUYjNiQtRiw2JVEtJnZhcmVwc2lsb247RidGW3ZGOUY5Rl15Rl95RmJ5RmR5RmN0RmNzLUZmbjYkLUYjNi1GYHRGXXRGYVtsRmN0LUYsNiVRIlJGJ0YvRjJGXW8tRiw2JVEkc2VxRidGL0YyLUZmbjYkLUYjNjBGanMtRmZuNiYtRiM2JC1GLDYlUSJqRidGL0YyRjlGOUZdc0Zgc0ZddEZhW2xGY3QtRiw2JVEiWEYnRi9GMkZiXGxGXW9GZlxsRl10LUZqcjYkUSIzRidGOS1GNjYtUSMuLkYnRjlGO0Y+RkBGQkZERkZGSEZnd0ZaRlxxRjlGOUZdby1GZ3g2KC1GIzYlRl9xRmVyRjktRiM2JUZfcUZqd0Y5Rl15Rl95RmJ5RmR5RjlGOUY5RjlGXW9GYVtsRl10LUZqcjYkUSIwRidGOUZdb0Zjb0Zkd0ZpckY5RjlGW3JGaW9GZnBGZXFGZXJGNS1GLDYlUShjb2xsZWN0RidGL0YyLUZmbjYkLUYjNictRiw2JVEpc2ltcGxpZnlGJ0YvRjItRmZuNiQtRiM2KkZmby1GIzYmLUYsNiVRKGNvbnZlcnRGJ0YvRjItRjY2LlEwJkFwcGx5RnVuY3Rpb247RidGaXRGOUZcdUZedUZfdUZgdUZhdUZidUZjdUZYRlotRmZuNiQtRiM2J0ZocUZlckZdby1GLDYlUShwb2x5bm9tRidGL0YyRjlGOUY5RmZvRl1vLUZmbjYmLUYjNipGZnQtSSVtc3VwR0YkNiVGZHUtRiM2JC1GanI2JkZodkZpdEZcdkY5RjkvJTFzdXBlcnNjcmlwdHNoaWZ0R0ZqXWwtRjY2LkZmd0ZpdEY5RjtGPkZARkJGREZGRkhGZ3dGaXdGX3dGXGBsLUY2Ni5RKCZtaW51cztGJ0ZpdEY5RjtGPkZARkJGREZGRkhGZ3dGaXdGaXhGOUY5L0Zec1EifGZyRicvRmFzUSJ8aHJGJ0ZkeC1GZm42Jy1GIzYmRmZvLUYjNiVGX3dGZHVGOUZmb0Y5Rml0RjlGXXNGYHNGOUY5Rl1vRmFbbEY5RjlGW3JGaW9GZnBGZnAtRjY2L1EkZm9yRidGUkZURlZGO0Y+RkBGQkZERkZGSEZYRlpGZnBGYnFGZnAtRjY2L1ElZnJvbUYnRlJGVEZWRjtGPkZARkJGREZGRkhGWEZaRmZwRlxdbEZmcC1GNjYvUSN0b0YnRlJGVEZWRjtGPkZARkJGREZGRkhGWEZaRmZwRlxxRmZwLUY2Ni9RI2RvRidGUkZURlZGO0Y+RkBGQkZERkZGSEZYRlpGaW9GZnBGX3EtRmZuNiYtRiM2JEZicUY5RjlGXXNGYHNGNUZjcy1GZm42JC1GIzY1RmpzRmVyRl10RmB0RmN0RmZ0RmR1Rl52RmB2RmJ2Rml2Rlt3Rl13Rl93RmR1Rl52RmpuRmBibEY5RjlGW3JGaW9GZnBGaHFGYGJsRjVGX3otRmZuNiQtRiM2LUZmei1GZm42JC1GIzYmRmZvLUYjNidGXVtsRmN0RmNzLUZmbjYkLUYjNi1GYHRGXXRGYVtsRmN0RmhbbEZdb0ZbXGxGXlxsRl1vLUZneDYoLUYjNiVGX3FGYGJsRjktRiM2JkZfcS1GZm42Ji1GIzYlRl54Ri9GMkY5Rl1zRmBzRi9GMkZdeUZfeUZieUZkeUY5RjlGOUZmb0Y5RjlGXW9GYVtsRl10RmhdbEZdb0Zjb0Zkd0ZpckY5RjlGW3JGaW9GZnBGZXFGYGJsRjVGW15sLUZmbjYkLUYjNidGYl5sLUZmbjYkLUYjNipGZm8tRiM2JkZbX2xGXl9sLUZmbjYkLUYjNidGaHFGYGJsRl1vRmVfbEY5RjlGOUZmb0Zdb0ZoX2xGZHhGXmFsRjlGOUZdb0ZhW2xGOUY5RltyRmZwLUY2Ni9RI29kRidGUkZURlZGO0Y+RkBGQkZERkZGSEZYRlotRjY2LVEiOkYnRjlGO0Y+RkBGQkZERkZGSEZKRk1GaW9GZnBGZnAtRjY2L1EncmV0dXJuRidGUkZURlZGO0Y+RkBGQkZERkZGSEZYRlpGZnAtRmZuNiYtRiM2KEZlcUZlckZdb0ZbXGwtRmZuNiQtRiM2K0ZlcUZiXGxGXW9GZlxsRl10RlxdbEZfXWxGXHFGOUY5RjlGOUZdc0Zgc0ZbckZmcC1GNjYvUSRlbmRGJ0ZSRlRGVkY7Rj5GQEZCRkRGRkZIRlhGWkZmcEZPRmFlbEZpdC8lK2V4ZWN1dGFibGVHRj1GOQ==">QyQ+SS1TdGFuZGFyZEZvcm1HNiJmKjYkSSJQR0YlSSJrR0YlNidJIm5HRiVJImRHRiVJInNHRiVJI2RkR0YlSSJUR0YlRiVGJUMpPjgkLUklbm9wc0clKnByb3RlY3RlZEc2IzkkPiY4JTYjIiIiLUklc3Vic0dGNTYlLyZJInhHRiVGOyomSSJyR0YlRjwtSSRjb3NHRiU2I0kmdGhldGFHRiVGPC8mRkI2IyIiIyomRkRGPC1JJHNpbkdGJUZHRjwsJiomRkVGPCZGN0Y7RjxGPComRk5GPCZGN0ZLRjxGPD4mRjpGSy1GPjYlRkBGSSomRkQhIiIsJiomRkVGPEZURjxGPComRk5GPEZSRjxGWkY8PiY4KEY7LUknc2VyaWVzR0Y1NiUtSSdmYWN0b3JHRiU2IyomSShlcHNpbG9uR0YlRlotRj42JS9GRComRmJvRjxJIlJHRiVGPC1JJHNlcUdGNTYkLyZGQjYjSSJqR0YlKiZGYm9GPCZJIlhHRiVGXXBGPC9GXnA7IiIkRjIqJkY5RjxGVkZaRjwvRmJvIiIhLCY5JUY8RjxGPD4mOCdGOy1JKGNvbGxlY3RHRiU2JC1JKXNpbXBsaWZ5R0YlNiUtSShjb252ZXJ0R0Y1NiRGaW5JKHBvbHlub21HRjU8IywoKiRGRUZMRjwqJEZORkxGPEZaRjw3I0ZORmJvPyg4JkZkcEY8RjJJJXRydWVHRjVDJT4mRjo2I0Zdci1GPjYlRkBGSSZGN0Zicj4mRmpuRmJyLUZcbzYlLUZfbzYjKiZGYm9GWi1GPjYlRmVvRmhvKiZGYXJGPEZWRlpGPEZmcEZocD4mRlxxRmJyLUZecTYkLUZhcTYlLUZkcTYkRmdyRmZxRmdxRltyRmJvTzckRltxLUZpbzYkJkZccUZdcEZicEYlRiVGJUZa</Equation></Text-field>
-</Input>
-</Group>
-<Group labelreference="L2" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">BellSeqs := proc (l, m) 
+
+Function 1 StandardForm
+
+#################################################################################################################
+Input: A perturbed differential system P=[\dot{x}_1,\dot{x}_2,\ldots,\dot{x}_n] with an order k
+#################################################################################################################
+    
+#################################################################################################################
+Output: Standard form of averaging up to the k-th order in epsilon
+#################################################################################################################
+
+StandardForm := proc (P, k) 
+local n, d, s, dd, T; 
+n := nops(P); 
+d[1] := subs(x[1] = r*cos(theta), x[2] = r*sin(theta), cos(theta)*P[1]+sin(theta)*P[2]); 
+d[2] := subs(x[1] = r*cos(theta), x[2] = r*sin(theta), (cos(theta)*P[2]-sin(theta)*P[1])/r); 
+T[1] := series(factor(subs(r = epsilon*R, seq(x[j] = epsilon*X[j], j = 3 .. n), d[1]/d[2])/epsilon), epsilon = 0, k+1); 
+dd[1] := collect(simplify(convert(T[1], polynom), {cos(theta)^2+sin(theta)^2-1}, [sin(theta)]), epsilon); 
+for s from 3 to n do d[s] := subs(x[1] = r*cos(theta), x[2] = r*sin(theta), P[s]); 
+T[s] := series(factor(subs(r = epsilon*R, seq(x[j] = epsilon*X[j], j = 3 .. n), d[s]/d[2])/epsilon), epsilon = 0, k+1); 
+dd[s] := collect(simplify(convert(T[s], polynom), {cos(theta)^2+sin(theta)^2-1}, [sin(theta)]), epsilon); 
+end do; 
+return [dd[1], seq(dd[j], j = 3 .. n)]; 
+end proc:" 
+
+
+Function 2 BellSeqs
+
+#################################################################################################################
+Input: Positive integers l and m
+#################################################################################################################
+    
+#################################################################################################################
+Output: A set of lists induced by the Bell polynomial
+#################################################################################################################
+
+BellSeqs := proc (l, m) 
 local MultSeq, BP, SM, Bset, X, pb, ic, bs; 
 
 MultSeq := proc (x, kt) 
 local ST, id; 
-if kt &lt; 1 then return op([]); else ST[0] := [x]; 
+if kt < 1 then return op([]); 
+else ST[0] := [x]; 
 for id to kt-1 do 
-ST[id] := [x, op(ST[id-1])]; end do; 
-return op(ST[kt-1]) end if; end proc:
+ST[id] := [x, op(ST[id-1])]; 
+end do; 
+return op(ST[kt-1]); 
+end if; end proc:
 
 BP := IncompleteBellB(l, m, seq(y[i], i = 1 .. l-m+1)); 
-if nops([coeffs(BP)]) &gt; 1 then SM := [op(BP)]; 
+if nops([coeffs(BP)]) > 1 then SM := [op(BP)]; 
 else SM := [BP]; end if;
 Bset := {}; X[0] := []; 
 for pb in SM do 
@@ -110,12 +56,23 @@ for ic to l-m+1 do
 bs[ic] := degree(pb, y[ic]); 
 X[ic] := [op(X[ic-1]), MultSeq(y[ic], bs[ic])]; end do; 
 Bset := `union`(Bset, {[X[l-m+1], coeffs(pb)]}); end do; 
-return Bset; end proc:</Text-field>
-</Input>
-</Group>
-<Group labelreference="L3" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">LmultMap:=proc(m,n1,F,Y)  
+return Bset; end proc:
+
+    
+Note: In the following functions, 
+the variables z=[z_1,...,z_n] in the averaging formula are replaced by Z=[R,X_3,...,X_n]
+    
+Function 3 LmultMap
+
+#################################################################################################################
+Input: Positive integers m and n1, a smooth function F, and a list of vectors Y
+#################################################################################################################
+    
+#################################################################################################################
+Output: An expansion of the m-multilinear map
+#################################################################################################################
+
+LmultMap:=proc(m,n1,F,Y)  
 local AllNumbers, Z, LM, Num, ds, ls, W;
 
 AllNumbers := proc (m, n1) 
@@ -153,13 +110,21 @@ for ds in Num do
 for ls from 1 to m do 
 W[ls]:=Y[ls][op(ls,ds)-1](theta,Z); od;     
 LM:=LM+convert(D[op(ds)](F)(theta,Z)*product(W[j],j=1..m),Diff); od; 
-return LM; end proc:</Text-field>
-</Input>
-</Group>
-<Group labelreference="L4" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">LMNFBell:=proc(l,m,n1,F)
- local Yyseqs, Yy, BYC, jx, x, SL, Q, Y, MP;
+return LM; end proc:
+
+
+Function 4 LMNFBell
+
+#################################################################################################################
+Input: Positive integers l, m and n1, a smooth function F
+#################################################################################################################
+   
+#################################################################################################################
+Output: Symbolic expression of an equation in (2.8), see the remark after Algorithm 4 in the paper
+#################################################################################################################
+
+LMNFBell:=proc(l,m,n1,F)
+local Yyseqs, Yy, BYC, jx, x, SL, Q, Y, MP;
 
 Yyseqs:=proc(l,m,n1)
 local Yq, iy;
@@ -176,32 +141,45 @@ for Q in BYC do
 Y:=Q[1];
 MP:=LmultMap(m, n1, F, Y):
 SL:=SL+Q[2]*MP; od;
-return SL; end proc:</Text-field>
-</Input>
-</Group>
-<Group labelreference="L5" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">OrderKFormula := proc (k,n1) 
+return SL; end proc:
+
+
+Function 5 OrderKFormula
+
+#################################################################################################################
+Input: Positive integers k and n1
+#################################################################################################################
+   
+#################################################################################################################
+Output: List of formulae of the integral function y_k(\theta,z)
+#################################################################################################################
+
+OrderKFormula := proc (k,n1) 
 local Intfun, jk, UK, l, m; 
 
 Intfun:=[];
 for jk from 1 to n1 do
-
 UK := factorial(k)*(F[k,jk](theta, op([R,seq(X[j],j=3..n1+1)]))); 
-
 for l to k-1 do 
 for m to l do 
 UK := UK+(factorial(k)/factorial(l))*LMNFBell(l,m,n1,F[k-l,jk]); 
 od; od; 
-
+    
 Intfun:=[op(Intfun),Int(UK,theta=0 .. theta)]; od;
+return Intfun; end proc:
 
-return Intfun; end proc:</Text-field>
-</Input>
-</Group>
-<Group labelreference="L6" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">AveragedFunctions:=proc(SF,k)
+
+Function 6 AveragedFunctions
+
+#################################################################################################################
+Input: Standard form of averaging with an order k
+#################################################################################################################
+   
+#################################################################################################################
+Output: List of the k-th order averaged functions
+#################################################################################################################
+
+AveragedFunctions:=proc(SF,k)
 
 local n1, Z, t, i, s, h, T, Y, Funlist;
 global F, y;
@@ -220,13 +198,8 @@ Y[s,h]:=op(h,OrderKFormula(s,n1));
 y[s,h]:=unapply(value(Y[s,h]),Z); od; od;   
 
 Funlist:= [seq(factor((1)/(k!)*y[k,l](2*Pi,R,seq(X[j],j=3..n1+1))),l=1..n1)];
+return Funlist; end proc:
 
-return Funlist; end proc:</Text-field>
-</Input>
-</Group>
-<Group labelreference="L7" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2I1EhRicvJSdmYW1pbHlHUTBUaW1lc35OZXd+Um9tYW5GJy8lK2V4ZWN1dGFibGVHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJw==">JSFH</Equation></Text-field>
-</Input>
-</Group>
-</Worksheet>
+
+
+
