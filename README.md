@@ -4,7 +4,7 @@ Software for computing the averaged functions of any order for polynomial differ
 The main functions implemented in "Zero-Hopf-Averaging.mw" are
 # StandardForm(P, k) 
 Computes the standard form of averaging
-- P=[\dot{x}_1,\dot{x}_2,\ldots,\dot{x}_n] 
+- P=[\dot{x}_1,\dot{x}_2,\ldots,\dot{x}_n] is a differential system of the form (2.2)
 - k is the averaging order
 # BellSeqs(l, m) 
 Determines a set of lists induced by the Bell polynomial
