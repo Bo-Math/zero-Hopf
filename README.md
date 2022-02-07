@@ -18,5 +18,6 @@ Computes the symbolic expression of an equation in (2.8), see the remark after A
 Computes formula of the k-th order integral function y_k(\theta,Z)
 # AveragedFunctions(SF, k)
 Computes the k-th order averaged functions
+- SF is the standard form of averaging obtained by StandardForm(P, k)
 # Support
 The codes are supported by the National Natural Science Foundation of China (NSFC 12101032 and NSFC 12131004).
