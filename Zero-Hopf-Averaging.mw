@@ -9,19 +9,21 @@ Input: A perturbed differential system P=[\dot{x}_1,\dot{x}_2,\ldots,\dot{x}_n] 
 Output: Standard form of averaging up to the k-th order in epsilon
 #################################################################################################################
 
-StandardForm := proc (P, k) 
-local n, d, s, dd, T; 
+StandardForm := proc (P, k)
+local n, d, j, s, dRt, `d&theta;t`, `dR&theta;`, L, T; 
 n := nops(P); 
-d[1] := subs(x[1] = r*cos(theta), x[2] = r*sin(theta), cos(theta)*P[1]+sin(theta)*P[2]); 
-d[2] := subs(x[1] = r*cos(theta), x[2] = r*sin(theta), (cos(theta)*P[2]-sin(theta)*P[1])/r); 
-T[1] := series(factor(subs(r = epsilon*R, seq(x[j] = epsilon*X[j], j = 3 .. n), d[1]/d[2])/epsilon), epsilon = 0, k+1); 
-dd[1] := collect(simplify(convert(T[1], polynom), {cos(theta)^2+sin(theta)^2-1}, [sin(theta)]), epsilon); 
-for s from 3 to n do d[s] := subs(x[1] = r*cos(theta), x[2] = r*sin(theta), P[s]); 
-T[s] := series(factor(subs(r = epsilon*R, seq(x[j] = epsilon*X[j], j = 3 .. n), d[s]/d[2])/epsilon), epsilon = 0, k+1); 
-dd[s] := collect(simplify(convert(T[s], polynom), {cos(theta)^2+sin(theta)^2-1}, [sin(theta)]), epsilon); 
+for j to n do 
+d[j] := collect(expand(subs(seq(x[i] = epsilon*X[i], j = 1 .. n), P[j])/epsilon), epsilon);
 end do; 
-return [dd[1], seq(dd[j], j = 3 .. n)]; 
-end proc:" 
+dRt := subs(X[1] = R*cos(theta), X[2] = R*sin(theta), cos(theta)*d[1]+sin(theta)*d[2]);
+`d&theta;t` := subs(X[1] = R*cos(theta), X[2] = R*sin(theta), (cos(theta)*d[2]-sin(theta)*d[1])/R);
+`dR&theta;` := collect(simplify(convert(series(dRt/`d&theta;t`, epsilon = 0, k+1), polynom), {cos(theta)^2+sin(theta)^2-1}, [sin(theta)]), epsilon); 
+for s from 3 to n do 
+T[s] := subs(X[1] = R*cos(theta), X[2] = R*sin(theta), d[s]); 
+L[s] := collect(simplify(convert(series(T[s]/`d&theta;t`, epsilon = 0, k+1), polynom), {cos(theta)^2+sin(theta)^2-1}, [sin(theta)]), epsilon);
+end do; 
+return [`dR&theta;`, seq(L[t], t = 3 .. n)]; 
+end proc:
 
 
 Function 2 BellSeqs
