@@ -13,7 +13,7 @@ StandardForm := proc (P, k)
 local n, d, j, s, dRt, `d&theta;t`, `dR&theta;`, L, T; 
 n := nops(P); 
 for j to n do 
-d[j] := collect(expand(subs(seq(x[i] = epsilon*X[i], j = 1 .. n), P[j])/epsilon), epsilon);
+d[j] := collect(expand(subs(seq(x[i] = epsilon*X[i], i = 1 .. n), P[j])/epsilon), epsilon);
 end do; 
 dRt := subs(X[1] = R*cos(theta), X[2] = R*sin(theta), cos(theta)*d[1]+sin(theta)*d[2]);
 `d&theta;t` := subs(X[1] = R*cos(theta), X[2] = R*sin(theta), (cos(theta)*d[2]-sin(theta)*d[1])/R);
