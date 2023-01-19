@@ -8,9 +8,8 @@ Computes the standard form of averaging
 - k is the averaging order
 # OrderKFormula(k, n)
 Computes formula of the k-th order integral function y_k(\theta,Z)
-The main process of the program is:
 # AveragedFunctions(SF, k)
-Computes the k-th order averaged functions
+Computes the k-th order averaged functions (The main process of the program)
 - SF is the standard form of averaging obtained by StandardForm(S, k)
 # Support
 The codes are supported by the National Natural Science Foundation of China (NSFC 12101032 and NSFC 12131004).
