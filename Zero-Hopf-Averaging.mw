@@ -1,19 +1,19 @@
 
-Function 1 StandardForm
+The first auxiliary function: StandardForm(S,k)
 
 #################################################################################################################
-Input: A perturbed differential system P=[\dot{x}_1,\dot{x}_2,\ldots,\dot{x}_n] with an order k
+Input: A perturbed differential system S=[\dot{x}_1,\dot{x}_2,\ldots,\dot{x}_n] with an order k
 #################################################################################################################
     
 #################################################################################################################
-Output: Standard form of averaging up to the k-th order in epsilon
+Output: Standard form of averaging up to the k-th order in epsilon (denote by SF)
 #################################################################################################################
 
-StandardForm := proc (P, k)
+StandardForm := proc (S, k)
 local n, d, j, s, dRt, `d&theta;t`, `dR&theta;`, L, T; 
-n := nops(P); 
+n := nops(S); 
 for j to n do 
-d[j] := collect(expand(subs(seq(x[i] = epsilon*X[i], i = 1 .. n), P[j])/epsilon), epsilon);
+d[j] := collect(expand(subs(seq(x[i] = epsilon*X[i], i = 1 .. n), S[j])/epsilon), epsilon);
 end do; 
 dRt := subs(X[1] = R*cos(theta), X[2] = R*sin(theta), cos(theta)*d[1]+sin(theta)*d[2]);
 `d&theta;t` := subs(X[1] = R*cos(theta), X[2] = R*sin(theta), (cos(theta)*d[2]-sin(theta)*d[1])/R);
@@ -26,7 +26,69 @@ return [`dR&theta;`, seq(L[t], t = 3 .. n)];
 end proc:
 
 
-Function 2 BellSeqs
+The second auxiliary function: OrderKFormula(k,n1)
+
+#################################################################################################################
+Input: Positive integers k and n1 (n1:=nops(SF))
+#################################################################################################################
+   
+#################################################################################################################
+Output: List of formulae of the integral function y_k(\theta,z)
+#################################################################################################################
+
+OrderKFormula := proc (k,n1) 
+local Intfun, jk, UK, l, m; 
+
+Intfun:=[];
+for jk from 1 to n1 do
+UK := factorial(k)*(F[k,jk](theta, op([R,seq(X[j],j=3..n1+1)]))); 
+for l to k-1 do 
+for m to l do 
+UK := UK+(factorial(k)/factorial(l))*LMNFBell(l,m,n1,F[k-l,jk]); 
+od; od; 
+    
+Intfun:=[op(Intfun),Int(UK,theta=0 .. theta)]; od;
+return Intfun; end proc:
+
+
+----------------------------------------------------------------------------------------------------------------
+Subfunction:  LMNFBell(l,m,n1,F)
+
+#################################################################################################################
+Input: Positive integers l, m and n1, a smooth function F
+#################################################################################################################
+   
+#################################################################################################################
+Output: Symbolic expression of an equation in (2.8):  \partial^mF(\theta,\boldsymbol{z})
+B_{\ell,m}\big(\boldsymbol{y}_1(\theta,\boldsymbol{z}),\ldots,\boldsymbol{y}_{\ell-m+1}(\theta,\boldsymbol{z})\big)
+#################################################################################################################
+
+LMNFBell:=proc(l,m,n1,F)
+local Yyseqs, Yy, BYC, jx, x, SL, Q, Y, MP;
+
+Yyseqs:=proc(l,m,n1)
+local Yq, iy;
+Yq:=[];
+for iy from 1 to l-m+1 do
+Yq := [op(Yq),[seq(y[iy,j],j=1..n1)]]; od; return Yq; end proc:
+
+Yy := Yyseqs(l,m,n1);
+BYC:=subs(y=x,BellSeqs(l, m));
+for jx from 1 to l-m+1 do
+x[jx]:=op(jx,Yy); od;
+SL:=0;
+for Q in BYC do
+Y:=Q[1];
+MP:=LmultMap(m, n1, F, Y):
+SL:=SL+Q[2]*MP; od;
+return SL; end proc:
+
+-----------------------------------------------------------------------------------------------------------------
+
+Several subalgorithms in LMNFBell(l,m,n1,F) are described as follows:
+
+
+Subalgorithm 1: BellSeqs(l, m) 
 
 #################################################################################################################
 Input: Positive integers l and m
@@ -61,10 +123,11 @@ Bset := `union`(Bset, {[X[l-m+1], coeffs(pb)]}); end do;
 return Bset; end proc:
 
     
-Note: In the following functions, 
+Note: In the following algoriths, 
 the variables z=[z_1,...,z_n] in the averaging formula are replaced by Z=[R,X_3,...,X_n]
-    
-Function 3 LmultMap
+   
+   
+Subalgorithm 2: LmultMap(m,n1,F,Y)  
 
 #################################################################################################################
 Input: Positive integers m and n1, a smooth function F, and a list of vectors Y
@@ -115,63 +178,13 @@ LM:=LM+convert(D[op(ds)](F)(theta,Z)*product(W[j],j=1..m),Diff); od;
 return LM; end proc:
 
 
-Function 4 LMNFBell
-
-#################################################################################################################
-Input: Positive integers l, m and n1, a smooth function F
-#################################################################################################################
-   
-#################################################################################################################
-Output: Symbolic expression of an equation in (2.8), see the remark after Algorithm 4 in the paper
-#################################################################################################################
-
-LMNFBell:=proc(l,m,n1,F)
-local Yyseqs, Yy, BYC, jx, x, SL, Q, Y, MP;
-
-Yyseqs:=proc(l,m,n1)
-local Yq, iy;
-Yq:=[];
-for iy from 1 to l-m+1 do
-Yq := [op(Yq),[seq(y[iy,j],j=1..n1)]]; od; return Yq; end proc:
-
-Yy := Yyseqs(l,m,n1);
-BYC:=subs(y=x,BellSeqs(l, m));
-for jx from 1 to l-m+1 do
-x[jx]:=op(jx,Yy); od;
-SL:=0;
-for Q in BYC do
-Y:=Q[1];
-MP:=LmultMap(m, n1, F, Y):
-SL:=SL+Q[2]*MP; od;
-return SL; end proc:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Function 5 OrderKFormula
 
-#################################################################################################################
-Input: Positive integers k and n1
-#################################################################################################################
-   
-#################################################################################################################
-Output: List of formulae of the integral function y_k(\theta,z)
-#################################################################################################################
-
-OrderKFormula := proc (k,n1) 
-local Intfun, jk, UK, l, m; 
-
-Intfun:=[];
-for jk from 1 to n1 do
-UK := factorial(k)*(F[k,jk](theta, op([R,seq(X[j],j=3..n1+1)]))); 
-for l to k-1 do 
-for m to l do 
-UK := UK+(factorial(k)/factorial(l))*LMNFBell(l,m,n1,F[k-l,jk]); 
-od; od; 
-    
-Intfun:=[op(Intfun),Int(UK,theta=0 .. theta)]; od;
-return Intfun; end proc:
-
-
-Function 6 AveragedFunctions
+The main process of the program: AveragedFunctions(SF,k)
 
 #################################################################################################################
 Input: Standard form of averaging with an order k
@@ -201,7 +214,6 @@ y[s,h]:=unapply(value(Y[s,h]),Z); od; od;
 
 Funlist:= [seq(factor((1)/(k!)*y[k,l](2*Pi,R,seq(X[j],j=3..n1+1))),l=1..n1)];
 return Funlist; end proc:
-
 
 
 
