@@ -1,23 +1,16 @@
-# Zero-Hopf-Bifurcation
+# Zero-Hopf Bifurcations of Differential Systems
 Software for computing the averaged functions of any order for polynomial differential systems
 
-The main functions implemented in "Zero-Hopf-Averaging.mw" are
-# StandardForm(P, k) 
+The main functions implemented in "Zero-Hopf-Averaging.mw" are:
+# StandardForm(S, k) 
 Computes the standard form of averaging
-- P=[\dot{x}_1,\dot{x}_2,\ldots,\dot{x}_n] is a differential system of the form (2.2)
+- S=[\dot{x}_1,\dot{x}_2,\ldots,\dot{x}_n] is a differential system of the form (2.2)
 - k is the averaging order
-# BellSeqs(l, m) 
-Determines a set of lists induced by the Bell polynomial
-# LmultMap(m, n1, F, Y) 
-Derives the explicit expansion of the m-multilinear map
-- n1 is the number of variables in Z=[R,X_3,...,X_n]
-- Y is a list of vectors
-# LMNFBell(l, m, n1, F)
-Computes the symbolic expression of an equation in (2.8), see the remark after Algorithm 4 in the paper
-# OrderKFormula(k, n1)
+# OrderKFormula(k, n)
 Computes formula of the k-th order integral function y_k(\theta,Z)
+The main process of the program is:
 # AveragedFunctions(SF, k)
 Computes the k-th order averaged functions
-- SF is the standard form of averaging obtained by StandardForm(P, k)
+- SF is the standard form of averaging obtained by StandardForm(S, k)
 # Support
 The codes are supported by the National Natural Science Foundation of China (NSFC 12101032 and NSFC 12131004).
