@@ -199,7 +199,7 @@ Z:=[theta,R,seq(X[j],j=3..n1+1)];
 
 for t from 1 to k do
 for i from 1 to n1 do
-T[t,i]:=coeff(NF[i],(epsilon)^t);
+T[t,i]:=coeff(NF[i],(varepsilon)^t);
 F[t,i]:=unapply(T[t,i],Z);  od; od;
 
 for s from 1 to k do
